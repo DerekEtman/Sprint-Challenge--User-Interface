@@ -95,7 +95,7 @@ header nav img{
    /* border: 1px solid red;*/
 
     font-family:'Rubik', sans-serif;
-    font-weight: bold;
+    font-weight: 400%;
 }
 
 .top-content {
@@ -106,10 +106,33 @@ header nav img{
     border-bottom: 1px dashed black;
 }
 
+.about-page{
+    /*border:1px solid red; */
+
+    border-bottom: 1px dashed black;
+    padding:20px;
+    margin:auto;
+}
+
 .top-content .text-container {
+    /*border: 1px solid red; */
+
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    border-bottom: 1px dashed black;
+}
+
+.top-content .text-container p{
+    margin: 0 0 30px;
+}
+.top-content .text-container a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:10px 30px;
+    margin:0 auto 40px;
 }
 
 .top-content img{
@@ -144,6 +167,9 @@ header nav img{
     align-items: center;
     justify-content: center;
 }
+
+
+/*Omg so many nth-child boxes repeating myself too much BUT OH WELL ON TO THE NEXT PROBLEM*/
 
 .middle-content .boxes .box:nth-child(1) {
     background-color:#008080;
