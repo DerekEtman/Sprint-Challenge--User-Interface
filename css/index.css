@@ -89,7 +89,7 @@ header nav a{
     color:black;
     font-family:'Rubik', sans-serif;
     padding-top: 26px;
-    padding-right:30px;
+    /*padding-right:30px;*/
     /*text-align: bottom; */
 }
 
@@ -123,6 +123,10 @@ header nav img{
     border-bottom: 1px dashed black;
     padding:20px;
     margin:auto;
+}
+
+.about-page img{
+    margin: 25px auto;
 }
 
 .top-content .text-container {
@@ -261,3 +265,34 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+/* Contact */
+
+.contact-container{
+    display:flex;
+    margin 30px auto;
+}
+
+.contact-image{
+   background-size:cover;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
