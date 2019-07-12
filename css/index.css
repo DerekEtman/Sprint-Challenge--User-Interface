@@ -153,7 +153,10 @@ header nav img{
 
 .top-content img{
     margin: 30px auto;
+
 }
+  
+
 
 .middle-content {
     margin-bottom: 20px;
@@ -182,8 +185,29 @@ header nav img{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: vibrate-1 0.3s linear infinite both;
 }
 
+@keyframes vibrate-1 {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
 
 /*Omg so many nth-child boxes repeating myself too much BUT OH WELL ON TO THE NEXT PROBLEM*/
 
