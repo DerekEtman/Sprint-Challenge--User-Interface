@@ -71,19 +71,92 @@ p {
     margin: 0 auto;
 }
 
+header nav{
+   /* border: 1px solid red; */
+
+    height:auto;
+    display:flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+header nav a{
+    /*border: 1px solid orange; */
+    
+    text-decoration: none;
+    display: flex;
+    flex-flow: wrap;
+    color:black;
+    font-family:'Rubik', sans-serif;
+    padding-top: 26px;
+    /*padding-right:30px;*/
+    /*text-align: bottom; */
+}
+
+header nav img{
+    /* border: 1px solid red;*/ 
+    /*align-content:center;*/
+    /*justify-content: stretch;*/
+
+
+}
+
+
+.text-container{
+   /* border: 1px solid red;*/
+
+    font-family:'Rubik', sans-serif;
+    font-weight: 400%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    /*border-bottom: 1px dashed black;*/
+}
+
+.about-page{
+    /*border:1px solid red; */
+
     border-bottom: 1px dashed black;
+    padding:20px;
+    margin:auto;
+}
+
+.about-page img{
+    margin: 25px auto;
 }
 
 .top-content .text-container {
+    /*border: 1px solid red; */
+
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    border-bottom: 1px dashed black;
 }
+
+
+.top-content .text-container p{
+    margin: 0 0 30px;
+}
+.top-content .text-container a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:10px 30px;
+    margin:0 auto 40px;
+}
+
+.top-content img{
+    margin: 30px auto;
+
+}
+  
+
 
 .middle-content {
     margin-bottom: 20px;
@@ -102,6 +175,8 @@ p {
 }
 
 .middle-content .boxes .box {
+   /* border: 1px solid red; */
+
     width: 12.5%;
     height: 100px;
     background: black;
@@ -110,7 +185,72 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: vibrate-1 0.3s linear infinite both;
 }
+
+@keyframes vibrate-1 {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+/*Omg so many nth-child boxes repeating myself too much BUT OH WELL ON TO THE NEXT PROBLEM*/
+
+.middle-content .boxes .box:nth-child(1) {
+    background-color:#008080;
+}
+
+.middle-content .boxes .box:nth-child(2) {
+    background-color:#ffd700;
+}
+
+.middle-content .boxes .box:nth-child(3) {
+    background-color:#5f9ea0;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background-color:#ff7f50;
+}
+
+.middle-content .boxes .box:nth-child(5) {
+    background-color:#dc143c;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background-color:#228b22;
+}
+
+.middle-content .boxes .box:nth-child(7) {
+    background-color:#9932cc;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background-color:#ff69b4;
+}
+
+.middle-content .boxes .box:nth-child(9) {
+    background-color:#4b0082;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+    background-color:#1e90ff;
+}
+
 
 .bottom-content {
     display: flex;
@@ -124,6 +264,11 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.work-together{
+    /*border:1px solid red; */
+    margin:50px 9px;
 }
 
 footer {
@@ -144,3 +289,34 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+/* Contact */
+
+.contact-container{
+    display:flex;
+    margin 30px auto;
+}
+
+.contact-image{
+   background-size:cover;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
