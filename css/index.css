@@ -71,6 +71,33 @@ p {
     margin: 0 auto;
 }
 
+header nav{
+    display:flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    vertical-align: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color:black;
+    font-family:'Roboto', sans-serif;
+}
+
+header nav img{
+   /* border: 1px solid red;*/
+   
+
+}
+
+
+.text-container{
+   /* border: 1px solid red;*/
+
+    font-family:'Rubik', sans-serif;
+    font-weight: bold;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -83,6 +110,10 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.top-content img{
+    margin: 30px auto;
 }
 
 .middle-content {
@@ -110,6 +141,10 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box1{
+    color:#008080;
 }
 
 .bottom-content {
